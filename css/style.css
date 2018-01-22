@@ -1,0 +1,19 @@
+body {
+    margin:20px;
+    padding:0;
+    background:#333;
+}
+.container {
+    max-width:80%;
+    margin:auto;
+    border: #fff solid 5px;
+    background: #fff;
+}
+.main-img img,.thum-img img{
+    width:100%;
+}
+.thum-img {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:5px;
+}
