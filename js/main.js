@@ -1,10 +1,11 @@
-// creating current image
-//const current = document.querySelector("#current");
-// creating images
-//const imgs = document.querySelectorAll(".thum-img img");
-// looping through images using forEach
-const [current,imgs]=[document.querySelector("#current"),document.querySelectorAll(".thum-img img")];
+
+const current = document.querySelector("#current");
+const imgs = document.querySelectorAll(".thum-img img");
+//create opacity variable
 const opacity = 0.2;
+// set first image opacity
+imgs[0].style.opacity = opacity;
+
 imgs.forEach(function(img){
     img.addEventListener('click',imgClick);
 });
